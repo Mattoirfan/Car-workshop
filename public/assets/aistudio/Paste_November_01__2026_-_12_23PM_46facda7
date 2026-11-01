@@ -1,0 +1,1465 @@
+# MASTER PROMPT — DRIVECRAFT AUTOCARE
+## Build a Premium, Fully Functional Car Repair, Auto Mechanic & Vehicle Maintenance Website
+
+Act as an expert automotive business consultant, premium UI/UX designer, full-stack software engineer, database architect, automotive service workflow specialist, SEO consultant, and quality assurance engineer.
+
+Your mission is to research, design, and build a complete, modern, highly attractive, production-ready website and web application for a professional car repair and automotive maintenance business named **DRIVECRAFT AUTOCARE**.
+
+The business should appear trustworthy, skilled, transparent, customer-friendly, and technologically advanced. The website must be suitable for a real independent auto repair workshop, multi-brand car service center, mechanic garage, or growing automotive service business in India, with the flexibility to support international customers.
+
+This is not a simple landing page. Build a complete multi-page website with a professional frontend, functional backend, database, appointment scheduling, vehicle management, service estimates, repair progress tracking, invoicing, online payment integration, inventory management, customer portal, mechanic workflow, and administrative dashboard.
+
+The finished product should be visually impressive enough to present to prospective automotive business clients.
+
+Do not stop after designing the homepage. Implement the complete application, connect all pages, wire up functional controls, test critical user journeys, and provide the complete source code and deployment documentation.
+
+---
+
+# 1. BRAND IDENTITY AND VISUAL DIRECTION
+
+Brand name: **DRIVECRAFT AUTOCARE**
+
+Brand tagline: **“Expert Care. Clear Pricing. Confident Driving.”**
+
+Create an original automotive brand identity that feels premium, clean, dependable, energetic, and modern.
+
+Do not make the website entirely black, entirely white, or dominated by a single accent color. Use a carefully balanced palette with attractive contrast, rich visual details, clean backgrounds, and clear visual hierarchy.
+
+## Recommended color palette
+
+- Deep navy blue: `#18324A` — primary brand color.
+- Ocean teal: `#168C91` — secondary brand accent.
+- Vivid burnt orange: `#F07838` — primary CTA and energetic highlights.
+- Warm ivory: `#F7F5F0` — main light background.
+- Clean white: `#FFFFFF` — cards and content surfaces.
+- Soft slate: `#64748B` — secondary text.
+- Light steel gray: `#DCE3E8` — borders and dividers.
+- Charcoal: `#27323A` — headings and selected dark sections.
+- Pale teal: `#E4F3F1` — subtle highlighted sections.
+
+Use navy for trust and professionalism, teal for technology and reliability, orange for important actions, and warm ivory or white to keep the design light and comfortable to view.
+
+Use dark backgrounds only for selected hero sections, testimonials, promotional banners, and footer areas. The majority of the website should feel bright, spacious, and easy to read.
+
+Do not use neon colors excessively. Avoid large areas of pure black, harsh saturated backgrounds, distracting gradients, and low-contrast text.
+
+## Typography
+
+Use a professional sans-serif font such as Inter, Manrope, or Plus Jakarta Sans.
+
+Use:
+- Large, clear hero headings.
+- Medium-weight section headings.
+- Readable paragraph text.
+- Consistent line heights.
+- Proper word spacing.
+- Distinct typography for prices, labels, buttons, and navigation.
+- Appropriate text sizes on mobile.
+- Consistent font weights and spacing across all pages.
+
+Never allow text to overlap, clip, or appear cramped. Keep buttons, headings, labels, prices, and navigation text properly aligned.
+
+## Visual style
+
+Use a premium automotive editorial style with:
+
+- Large, high-quality workshop and vehicle photography.
+- Clean white and ivory sections.
+- Navy and teal information panels.
+- Orange CTA buttons.
+- Attractive service cards.
+- Realistic mechanic and diagnostic imagery.
+- Vehicle inspection report previews.
+- Subtle shadows and tasteful borders.
+- Modern iconography.
+- Carefully spaced content.
+- Smooth, restrained animations.
+- Clear calls to action.
+- Consistent image ratios.
+- Premium pricing and service estimate layouts.
+
+The website should look like a modern automotive service brand, not an outdated mechanic directory or generic dark dashboard template.
+
+---
+
+# 2. CRITICAL REQUIREMENT: HEADER NAVIGATION MUST ALWAYS ALIGN HORIZONTALLY
+
+This is a mandatory design and implementation requirement.
+
+On desktop and laptop screens, the header navigation must remain in one single horizontal line. Every navigation label must stay on one line.
+
+For example:
+
+`[LOGO] Home | About Us | Services | Pricing | How It Works | Our Team | Contact | [Book a Service]`
+
+The following must never happen:
+
+Incorrect:
+- About
+- Us
+
+Correct:
+- About Us
+
+The same rule applies to:
+- Our Services
+- How It Works
+- Service Packages
+- Book a Service
+- Track My Repair
+
+## Technical requirements
+
+1. Build the header using a clean, reusable flex-based layout.
+2. Use appropriate `display: flex`, `align-items: center`, and desktop `flex-wrap: nowrap`.
+3. Apply `white-space: nowrap` to desktop navigation labels.
+4. Prevent the logo, menu labels, and main CTA from shrinking or colliding unexpectedly.
+5. Maintain balanced horizontal padding, margins, and spacing.
+6. Vertically center the logo, menu, and CTA.
+7. Use a suitable maximum container width and consistent page gutters.
+8. Keep the desktop navigation within the available viewport width.
+9. If necessary, reduce gaps moderately or simplify secondary links before allowing wrapping.
+10. When the complete navigation no longer fits, switch to a proper mobile/tablet menu at an appropriate breakpoint.
+11. Never allow the desktop navigation to wrap into multiple rows.
+12. Prevent the header from creating horizontal scrolling.
+13. Ensure sticky navigation does not cover section headings or page content.
+14. Use the same shared header component across all public pages.
+15. Maintain consistent alignment when the user scrolls.
+
+Test at widths of 1280px, 1366px, 1440px, and 1920px, as well as intermediate widths.
+
+On mobile, use a polished hamburger menu or accessible slide-out menu. A vertical list inside the opened mobile menu is acceptable; a multi-line desktop navigation bar is not.
+
+**Treat this as a testable acceptance criterion, not a visual preference.**
+
+---
+
+# 3. MANDATORY AI-GENERATED AUTOMOTIVE IMAGES
+
+Use **Splash AI or its available image-generation integration** to generate high-quality, original automotive images for the website.
+
+AI-generated imagery is mandatory for the project. Do not deliver a website that only contains empty image placeholders, broken links, generic colored rectangles, or descriptions of images that were never added.
+
+Generate and integrate a coherent collection of relevant images.
+
+## Required image collection
+
+Create images for:
+
+1. Homepage hero — a modern vehicle inside a clean, professional automotive workshop.
+2. Engine diagnostics — a mechanic inspecting an engine with professional tools.
+3. Brake repair — a technician working on a vehicle braking system.
+4. Oil and filter service — a clean vehicle maintenance scene.
+5. Wheel alignment — a car on professional alignment equipment.
+6. Tire replacement — technician inspecting and changing a tire.
+7. Battery and electrical diagnostics.
+8. Air-conditioning service.
+9. Suspension and steering repair.
+10. Transmission and clutch service.
+11. Vehicle detailing and exterior care.
+12. Pre-purchase vehicle inspection.
+13. Roadside assistance or breakdown support.
+14. Workshop interior and service bays.
+15. Professional mechanics and service advisors.
+16. Customer handover and vehicle inspection.
+17. Diagnostic tools and modern equipment.
+18. Service-package promotional banners.
+19. About Us team and workshop gallery.
+20. Blog and automotive maintenance article thumbnails.
+
+Use a combination of wide landscape images, portrait photos, square service thumbnails, and suitable background images.
+
+## Image generation instructions
+
+- Generate images that look realistic, polished, professional, and commercially appropriate.
+- Keep the visual style consistent across the website.
+- Prefer natural workshop lighting and believable vehicle details.
+- Use diverse, realistic mechanics and customers.
+- Avoid distorted hands, impossible tools, malformed vehicle components, or misleading technical imagery.
+- Do not embed essential website text inside the generated images.
+- Use appropriate cropping and aspect ratios for every section.
+- Save generated images into the project's organized asset directory or the configured image storage service.
+- Upload and integrate the generated assets so they actually appear on the website.
+- Use responsive image sizing, modern image formats when supported, and lazy loading below the fold.
+- Provide meaningful alt text for informative images.
+- Use appropriate fallbacks if an image fails to load.
+
+If Splash AI requires credentials or is unavailable in the development environment, configure the intended integration and document the limitation. Use an available image-generation fallback to produce the required assets where possible. Never claim Splash AI generated or uploaded an image if that action did not occur.
+
+Do not reuse the same hero photograph across every service card. Each service category should have a relevant image.
+
+Create an original SVG logo featuring a tasteful automotive-inspired symbol, such as a road line, wheel, or precision-engineering motif. Do not copy a car manufacturer's logo.
+
+---
+
+# 4. COMPLETE WEBSITE PAGE STRUCTURE
+
+Create separate, fully functional pages with clean URLs, shared navigation, and working internal links.
+
+## PAGE 1 — HOME
+
+Route: `/`
+
+Create a premium homepage that immediately communicates trust, automotive expertise, transparent pricing, and convenient booking.
+
+### Hero section
+
+Use a large, professionally generated automotive workshop image.
+
+Suggested headline:
+
+**“Your Car Deserves Expert Care.”**
+
+Supporting copy:
+
+“Reliable repairs, honest estimates, and professional maintenance to keep you moving with confidence.”
+
+Primary CTA: **Book a Service**
+
+Secondary CTA: **Explore Our Services**
+
+Include a small trust-focused supporting line about transparent estimates and qualified technicians, but do not invent certifications or performance claims.
+
+### Homepage sections
+
+Include:
+
+- A clean service-search or booking widget.
+- Service category cards.
+- Why Choose DriveCraft.
+- A step-by-step explanation of the repair process.
+- Featured maintenance packages.
+- Our workshop and equipment.
+- Meet Our Mechanics.
+- How digital inspection reports work.
+- Customer testimonials using clearly labeled demo content until genuine reviews are supplied.
+- Transparent estimate and approval process.
+- Customer repair-tracking preview.
+- FAQs.
+- Workshop location, opening hours, and contact information.
+- A prominent final booking CTA.
+
+Add useful quick actions such as:
+- Book a Service.
+- Get an Estimate.
+- Track My Repair.
+- Call the Workshop.
+- Find Our Location.
+
+Every CTA must perform the intended action or navigate to the correct destination.
+
+---
+
+## PAGE 2 — ABOUT US
+
+Route: `/about`
+
+Include:
+
+- Brand story.
+- Mission and service philosophy.
+- Commitment to transparent estimates.
+- Repair-quality and inspection process.
+- Workshop equipment and diagnostic capabilities.
+- Team introduction.
+- Technician profiles.
+- Customer communication approach.
+- Workshop photography gallery.
+- Location and operating information.
+- CTA to book a service.
+
+Do not fabricate the number of years in business, awards, professional certifications, authorized dealership status, or customer satisfaction statistics.
+
+Use editable demo content until the business supplies verified information.
+
+---
+
+## PAGE 3 — ALL SERVICES
+
+Route: `/services`
+
+Create a searchable and filterable service directory.
+
+Every service card must include:
+- Relevant image.
+- Service name.
+- Short description.
+- Common symptoms or reasons to request inspection.
+- Typical service scope.
+- Indicative price or “Request an Estimate.”
+- Availability status where supported.
+- View Details button.
+- Book This Service button.
+
+Create dedicated service detail pages with meaningful information and booking links.
+
+### Essential automotive service categories
+
+Include the following service categories, enabled according to the workshop's actual capabilities.
+
+**A. Routine Maintenance**
+- Scheduled vehicle servicing.
+- Engine oil and oil filter replacement.
+- Air filter replacement.
+- Cabin filter replacement.
+- Fluid-level inspection.
+- General vehicle health checks.
+- Manufacturer-specified maintenance where supported.
+
+**B. Engine Diagnostics and Repair**
+- Check-engine warning diagnosis.
+- Engine performance diagnosis.
+- Cooling-system inspection.
+- Overheating investigation.
+- Leak inspection.
+- Engine component repair.
+- Spark plug and ignition-system service where applicable.
+
+**C. Brake Services**
+- Brake inspection.
+- Brake pad and disc inspection.
+- Brake fluid service.
+- Brake noise diagnosis.
+- ABS warning diagnosis.
+- Brake-system repair.
+
+**D. Tires, Wheels, and Alignment**
+- Tire inspection and replacement.
+- Wheel balancing.
+- Wheel alignment.
+- Puncture repair where appropriate.
+- Tire rotation where applicable.
+- Steering and vibration diagnosis.
+
+**E. Battery and Electrical**
+- Battery testing and replacement.
+- Charging-system diagnosis.
+- Alternator and starter inspection.
+- Lighting repair.
+- Electrical fault diagnosis.
+- Wiring and fuse inspection.
+
+**F. Air Conditioning and Climate Control**
+- AC performance inspection.
+- Cooling-performance diagnosis.
+- Cabin filter service.
+- Leak diagnosis.
+- Refrigerant service by appropriately equipped personnel.
+- Compressor and related component inspection.
+
+**G. Suspension and Steering**
+- Suspension inspection.
+- Shock absorber and strut inspection.
+- Steering-system diagnosis.
+- Bush and joint inspection.
+- Unusual noise and vibration diagnosis.
+
+**H. Transmission and Clutch**
+- Transmission diagnostics.
+- Clutch inspection.
+- Gear-shifting issue diagnosis.
+- Transmission fluid service where specified.
+- Drivetrain inspection.
+
+**I. Bodywork and Paint**
+- Minor dent repair.
+- Scratch repair.
+- Paint touch-ups.
+- Panel repair.
+- Collision damage assessment.
+- Paint correction where offered.
+
+**J. Detailing and Vehicle Care**
+- Exterior wash.
+- Interior cleaning.
+- Interior detailing.
+- Upholstery cleaning.
+- Paint protection services.
+- Headlight restoration where offered.
+
+**K. Pre-Purchase Vehicle Inspection**
+- General vehicle condition check.
+- Visible bodywork inspection.
+- Diagnostic scan where supported.
+- Tire and brake condition check.
+- Basic under-bonnet inspection.
+- Inspection report with findings.
+- Clear explanation of inspection limitations.
+
+**L. Roadside Assistance**
+- Breakdown assistance.
+- Battery assistance.
+- Tire assistance.
+- Towing coordination.
+- Emergency service request.
+
+Only advertise roadside assistance, towing, specialist diagnostics, paintwork, and other advanced services if the business actually provides them or has a confirmed partner.
+
+**M. Hybrid and Electric Vehicle Services**
+- EV and hybrid general inspections where trained and equipped.
+- High-voltage system services only by appropriately qualified personnel.
+- EV-specific diagnostics where supported.
+- Battery-related inspection within the workshop's verified capabilities.
+
+Do not imply that a general mechanic can safely service high-voltage EV components without the necessary training and equipment.
+
+Create dedicated service URLs, such as:
+- `/services/car-servicing`
+- `/services/engine-diagnostics`
+- `/services/brake-repair`
+- `/services/tyre-and-wheel`
+- `/services/battery-electrical`
+- `/services/car-ac`
+- `/services/suspension-steering`
+- `/services/transmission-clutch`
+- `/services/bodywork-paint`
+- `/services/car-detailing`
+- `/services/pre-purchase-inspection`
+- `/services/roadside-assistance`
+- `/services/hybrid-ev`
+
+Each detail page should have its own title, description, relevant image, scope, exclusions, estimate guidance, FAQs, and booking CTA.
+
+---
+
+## PAGE 4 — SERVICE PACKAGES AND PRICING
+
+Route: `/pricing`
+
+Design an attractive service-package page with comparison cards, clear inclusions, and transparent pricing.
+
+Use INR as the default currency for India. Make the currency, prices, taxes, and service inclusions configurable for other markets.
+
+Use the following illustrative demo packages:
+
+### Essential Care — ₹1,499
+
+- Basic vehicle inspection.
+- Engine oil and filter service where compatible.
+- Fluid-level checks.
+- Basic battery and tire condition check.
+- Service summary.
+
+Parts, oil specifications, labor, and exclusions must be clearly described. The workshop must verify compatibility before confirming the final price.
+
+### Complete Care — ₹2,999
+
+- Essential Care items, subject to vehicle compatibility.
+- More comprehensive multi-point inspection.
+- Brake and tire condition review.
+- Battery and electrical check.
+- Cooling-system visual inspection.
+- Digital inspection report.
+
+### Premium Care — ₹4,999
+
+- Complete Care items, subject to vehicle compatibility.
+- Additional diagnostic checks within workshop capability.
+- Interior and exterior cleaning if actually included.
+- Priority booking where operationally supported.
+- Detailed service summary.
+
+### Vehicle Health Check — ₹799
+
+- General vehicle condition assessment.
+- Basic visual inspection.
+- Tire and lighting checks.
+- Fluid-level review.
+- Summary of findings and recommended next steps.
+
+These prices are sample values for a demonstration, not verified market rates. Make all prices editable through the admin panel.
+
+Important pricing rules:
+
+- Do not promise that every vehicle can be serviced for the same price.
+- Show “Starting from” where pricing depends on vehicle type or parts.
+- Clearly distinguish inspection fees from repair costs.
+- Identify parts, labor, taxes, and optional extras.
+- Explain that additional repairs require customer approval.
+- Never add paid work without authorization.
+- Allow the customer to request a vehicle-specific estimate.
+- Make the “Choose Package” and “Book Now” buttons functional.
+
+Create configurable pricing for hatchbacks, sedans, SUVs, luxury vehicles, and other supported vehicle categories where appropriate.
+
+---
+
+## PAGE 5 — BOOK A SERVICE
+
+Route: `/book-service`
+
+Build a complete appointment-booking flow.
+
+### Booking form fields
+
+- Customer name.
+- Email.
+- Phone number with country code support.
+- Vehicle make.
+- Vehicle model.
+- Model year.
+- Fuel type.
+- Transmission type where relevant.
+- Registration number, optional until needed.
+- Preferred service.
+- Preferred workshop branch.
+- Preferred date.
+- Available time slot.
+- Additional symptoms or concerns.
+- Optional uploaded vehicle images.
+- Preferred contact method.
+- Pickup/drop-off request if available.
+- Consent to the relevant privacy notice.
+
+Use conditional fields so that customers only see questions relevant to their selected service.
+
+### Booking behavior
+
+- Display actual available slots from the backend.
+- Prevent booking outside business hours.
+- Prevent duplicate submissions.
+- Prevent double booking where capacity is limited.
+- Validate the booking on the server.
+- Send confirmation when the booking is successfully created.
+- Allow rescheduling and cancellation according to the configured policy.
+- Show a clear booking reference.
+- Provide an authenticated booking history.
+
+Support workshop appointments, diagnostic appointments, inspection bookings, and estimate requests.
+
+Do not show fake real-time availability. If availability is not configured, show a request-based booking flow and clearly label it as awaiting confirmation.
+
+---
+
+## PAGE 6 — REQUEST AN ESTIMATE
+
+Route: `/estimate`
+
+Create a transparent estimate-request experience.
+
+Customers should be able to provide:
+
+- Vehicle details.
+- Requested repair or service.
+- Description of the issue.
+- Warning lights or symptoms.
+- Preferred inspection date.
+- Optional images or documents.
+- Contact details.
+
+The workshop should be able to review the request and respond with an estimate.
+
+An estimate should support:
+- Parts.
+- Labor.
+- Diagnostic fees.
+- Taxes.
+- Discounts where authorized.
+- Optional recommendations.
+- Expected completion range.
+- Estimate expiry.
+- Terms and exclusions.
+
+Use distinct statuses such as `draft`, `sent`, `viewed`, `approved`, `declined`, `expired`, and `revised`.
+
+The customer must be able to approve or decline an estimate after authentication.
+
+If the mechanic discovers additional work, create a revised estimate or supplemental approval request. Do not silently add the extra cost to the invoice.
+
+Clearly distinguish a preliminary estimate from a final invoice.
+
+---
+
+## PAGE 7 — TRACK MY REPAIR
+
+Route: `/track-repair`
+
+Create a polished vehicle repair tracking experience.
+
+Authenticated customers should see their own active service jobs.
+
+Support configurable workflow stages such as:
+
+1. Appointment Confirmed.
+2. Vehicle Checked In.
+3. Initial Inspection.
+4. Diagnosis in Progress.
+5. Estimate Prepared.
+6. Awaiting Customer Approval.
+7. Parts Ordered, if applicable.
+8. Repair in Progress.
+9. Quality Inspection.
+10. Ready for Collection.
+11. Completed and Delivered.
+
+Display:
+- Booking reference.
+- Vehicle details.
+- Current status.
+- Status timeline.
+- Service advisor or assigned technician, where appropriate.
+- Inspection report.
+- Approved estimate.
+- Pending customer approvals.
+- Relevant workshop notes.
+- Expected completion range.
+- Final invoice when available.
+
+Support images of identified repair findings and completed work, subject to privacy and operational controls.
+
+Do not expose private internal notes, security-sensitive workshop details, or another customer's information.
+
+Do not claim a repair is completed until an authorized staff member changes the job status.
+
+---
+
+## PAGE 8 — DIGITAL VEHICLE INSPECTION REPORT
+
+Route: `/inspection-reports`
+
+Build a customer-friendly digital inspection report experience.
+
+Use clear categories:
+
+- Green: inspected and no issue identified within the inspection scope.
+- Amber: requires attention or monitoring.
+- Red: urgent attention recommended by the qualified technician.
+
+Do not use these colors as an automated diagnosis. They are presentation indicators for findings entered and reviewed by an authorized technician.
+
+Each report item should support:
+- Component name.
+- Finding.
+- Priority.
+- Explanation.
+- Photo or video evidence, when available.
+- Recommended next action.
+- Estimated cost, if approved by the workshop.
+- Customer decision status.
+
+Customers should be able to:
+- View the report.
+- Ask a question.
+- Approve a quoted repair.
+- Decline a recommendation.
+- Request clarification.
+
+Record approvals and changes in the audit trail.
+
+Never fabricate diagnostic results or generate a technical diagnosis from an image without qualified human review.
+
+---
+
+## PAGE 9 — OUR TEAM
+
+Route: `/team`
+
+Create a professional directory of mechanics, technicians, service advisors, and workshop managers.
+
+Each profile may include:
+- Name.
+- Professional photograph.
+- Role.
+- Biography.
+- Verified qualifications.
+- Areas of expertise.
+- Languages spoken.
+- Branch.
+- Appointment availability, if applicable.
+
+Create detail routes such as `/team/[slug]`.
+
+Clearly label sample profiles until real staff information is provided.
+
+Never invent certifications or manufacturer authorization.
+
+---
+
+## PAGE 10 — ABOUT OUR WORKSHOP AND FACILITIES
+
+Route: `/workshop`
+
+Show the workshop through an attractive photo gallery.
+
+Possible sections:
+- Service bays.
+- Diagnostic equipment.
+- Lifts and workshop tools.
+- Waiting area.
+- Customer reception.
+- Parts storage.
+- Vehicle handover area.
+- Safety practices.
+- Cleanliness and waste-management procedures.
+- Customer communication process.
+
+Only show equipment and facilities actually available at the workshop. Mark demo images as illustrative until replaced with authentic business photographs.
+
+---
+
+## PAGE 11 — CUSTOMER REVIEWS
+
+Route: `/reviews`
+
+Create a clean customer feedback page.
+
+Include:
+- Verified customer feedback.
+- Service category.
+- Review date.
+- Optional vehicle type.
+- Review moderation.
+- Customer consent where required.
+
+Allow authenticated customers to submit reviews after an eligible completed job.
+
+Prevent duplicate submissions and abusive content. Do not fabricate genuine customer testimonials, star ratings, or review counts.
+
+Any sample reviews shown in the demo must be clearly labeled as fictional demonstration content and must not be represented as real customer feedback.
+
+---
+
+## PAGE 12 — CONTACT AND WORKSHOP LOCATIONS
+
+Route: `/contact`
+
+Include:
+- Contact form.
+- Workshop phone number.
+- Business email.
+- Address.
+- Opening hours.
+- Map and directions link.
+- Available branches.
+- Social links.
+- Emergency or breakdown contact instructions if offered.
+- Holiday closures.
+- Frequently asked questions.
+
+Use configurable business information. Do not invent a real address, phone number, operating schedule, or branch.
+
+Validate forms on the client and server. Include clear submission, error, and success states.
+
+---
+
+## PAGE 13 — CUSTOMER REGISTRATION AND LOGIN
+
+Routes:
+- `/register`
+- `/login`
+- `/forgot-password`
+- `/reset-password`
+
+Implement secure authentication with:
+- Email and password registration.
+- Email verification.
+- Login and logout.
+- Password reset.
+- Secure session handling.
+- Appropriate password rules.
+- Optional social login if configured.
+- Rate limiting.
+- Server-side authorization.
+- Clear validation messages.
+
+Never store plaintext passwords or expose authentication secrets in frontend code.
+
+---
+
+## PAGE 14 — CUSTOMER DASHBOARD
+
+Route: `/account`
+
+Require authentication.
+
+Create a professional dashboard with:
+
+### Overview
+- Upcoming appointments.
+- Active repair jobs.
+- Pending estimates.
+- Unread notifications.
+- Recent invoices.
+
+### My Vehicles
+Allow customers to save multiple vehicles with:
+- Make and model.
+- Year.
+- Fuel type.
+- Registration number where needed.
+- Optional VIN, collected only when operationally necessary.
+- Odometer reading where relevant.
+- Vehicle notes.
+
+### My Bookings
+- Upcoming appointments.
+- Past appointments.
+- Booking reference.
+- Rescheduling and cancellation controls.
+
+### My Repairs
+- Repair status.
+- Inspection reports.
+- Approved estimates.
+- Repair history.
+- Invoices.
+
+### My Payments
+- Payment history.
+- Payment status.
+- Receipts.
+- Refund status where applicable.
+
+### My Profile
+- Contact details.
+- Notification preferences.
+- Account security.
+- Privacy settings.
+- Account deletion request.
+
+Customers must only be able to access their own data.
+
+---
+
+## PAGE 15 — ONLINE CHECKOUT AND PAYMENTS
+
+Routes:
+- `/checkout`
+- `/payment/success`
+- `/payment/failed`
+- `/payment/cancelled`
+
+Integrate a suitable payment provider, such as Razorpay for India and Stripe where supported.
+
+Support:
+- Appointment deposits if required.
+- Diagnostic fees.
+- Approved repair estimates.
+- Final invoices.
+- Partial and full payments where configured.
+- Payment receipts.
+- Refund tracking.
+- Payment status history.
+
+Requirements:
+- Create orders on the server.
+- Verify payments server-side.
+- Validate signed webhooks.
+- Prevent duplicate payment processing.
+- Keep payment status synchronized with the database.
+- Do not activate or complete a transaction solely because the browser shows a success page.
+- Never store raw card details.
+- Use provider-hosted or tokenized payment components.
+- Explain payment failures clearly.
+- Make live credentials configurable through environment variables.
+
+If credentials are unavailable, provide a test-mode integration and explicit setup instructions. Do not pretend a live payment has been processed.
+
+---
+
+## PAGE 16 — MECHANIC AND SERVICE ADVISOR DASHBOARD
+
+Route: `/staff`
+
+Protect the dashboard with role-based access.
+
+Authorized workshop staff should be able to:
+
+- View assigned jobs.
+- Review vehicle information.
+- Record customer-reported symptoms.
+- Enter inspection findings.
+- Upload approved inspection images.
+- Add internal notes.
+- Prepare estimates.
+- Request customer approval.
+- Record approved work.
+- Update repair status.
+- Record parts used.
+- Log labor time.
+- Request additional approval when new work is required.
+- Mark jobs ready for quality inspection.
+- Record completion and handover.
+
+Support separate permissions for technicians and service advisors.
+
+Technicians should not automatically have access to all financial records, user administration, or sensitive customer data.
+
+Every important status change should record the actor and timestamp.
+
+---
+
+## PAGE 17 — ADMIN DASHBOARD
+
+Route: `/admin`
+
+Build a secure administrative dashboard for authorized business owners and managers.
+
+### Overview
+- Total bookings.
+- Upcoming appointments.
+- Active jobs.
+- Jobs awaiting approval.
+- Completed jobs.
+- Outstanding invoices.
+- Revenue summaries.
+- Popular services.
+- Booking trends.
+- Inventory alerts.
+
+Clearly distinguish demo analytics from real business data.
+
+### Service management
+- Create and edit services.
+- Manage descriptions and images.
+- Configure prices and exclusions.
+- Set estimated service durations.
+- Enable or disable services.
+
+### Appointment management
+- View calendar.
+- Create and reschedule bookings.
+- Assign technicians.
+- Manage workshop capacity.
+- Handle cancellations and no-shows.
+
+### Repair job management
+- Create job cards.
+- Assign technicians.
+- Record inspection findings.
+- Manage estimates and approvals.
+- Update repair stages.
+- Track job completion.
+
+### Customer and vehicle management
+- Customer profiles.
+- Vehicle records.
+- Service history.
+- Communication preferences.
+- Appropriate access and deletion controls.
+
+### Pricing and estimate management
+- Parts and labor lines.
+- Taxes.
+- Discounts.
+- Estimate revisions.
+- Approval records.
+- Invoice generation.
+
+### Inventory management
+- Parts catalogue.
+- Part number or SKU.
+- Supplier.
+- Cost and sale price.
+- Available quantity.
+- Reorder threshold.
+- Stock adjustments.
+- Parts reserved for jobs.
+- Low-stock notifications.
+
+### Staff management
+- Staff accounts.
+- Roles and permissions.
+- Technician availability.
+- Workload allocation.
+- Staff activity audit logs.
+
+### Payments and reports
+- Payments.
+- Refunds.
+- Outstanding invoices.
+- Revenue reports.
+- Service performance.
+- Inventory reports.
+- Exportable reports with appropriate access controls.
+
+### Website management
+- Homepage content.
+- Service pages.
+- Pricing.
+- Team profiles.
+- Workshop gallery.
+- FAQs.
+- Reviews.
+- Contact information.
+- Opening hours.
+- Policies.
+- SEO metadata.
+
+All administrative forms must be functional, validated, and connected to the backend.
+
+---
+
+## PAGE 18 — AUTOMOTIVE KNOWLEDGE CENTER
+
+Route: `/blog`
+
+Build an SEO-friendly article library featuring content such as:
+
+- Signs your car may need servicing.
+- Understanding dashboard warning lights.
+- When brake inspections are important.
+- How to maintain tires.
+- Battery care and common symptoms.
+- Understanding oil and filter service.
+- Preparing a vehicle for a long trip.
+- Air-conditioning maintenance.
+- Used-car inspection checklist.
+- Safe vehicle maintenance practices.
+
+Create article detail routes such as `/blog/[slug]`.
+
+Support:
+- Categories.
+- Search.
+- Publication date.
+- Author attribution.
+- Related articles.
+- Relevant service links.
+- Social sharing metadata.
+
+Use technically reviewed content. Do not make unsupported claims or encourage unsafe DIY work on critical vehicle systems.
+
+---
+
+## PAGE 19 — FAQ
+
+Route: `/faq`
+
+Create searchable FAQs about:
+- Booking appointments.
+- Vehicle drop-off.
+- Estimates and approvals.
+- Labor charges.
+- Parts and warranties.
+- Service duration.
+- Repair tracking.
+- Payment options.
+- Cancellations.
+- Refunds.
+- Roadside assistance.
+- EV and hybrid service capability.
+- Customer data and privacy.
+
+Answers must reflect the business's actual policies and capabilities. Keep the content editable in the admin panel.
+
+---
+
+## PAGE 20 — LEGAL AND POLICY PAGES
+
+Create:
+- `/privacy-policy`
+- `/terms-and-conditions`
+- `/cancellation-policy`
+- `/refund-policy`
+- `/warranty-policy`
+- `/cookie-policy`
+
+Include appropriate editable policy templates.
+
+Explain how customer data, vehicle information, uploaded photos, booking information, and payment records are handled.
+
+Do not promise a warranty, refund entitlement, or service guarantee unless the business has approved the exact terms.
+
+Policies must be customized for the business's location and reviewed for applicable law before launch.
+
+---
+
+# 5. BACKEND AND DATABASE ARCHITECTURE
+
+Use a maintainable modern full-stack architecture.
+
+Preferred stack:
+- Next.js with App Router.
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Supabase and PostgreSQL.
+- Supabase Auth or a suitable secure authentication provider.
+- Supabase Storage or an equivalent secure asset store.
+- Zod for schema validation.
+- A payment gateway integration such as Razorpay or Stripe.
+- A reliable transactional email provider.
+- A suitable logging and monitoring service.
+
+Use mutually compatible stable versions and follow current framework documentation.
+
+Design a normalized relational database with proper foreign keys, indexes, constraints, and access policies.
+
+Suggested entities:
+
+- `profiles`
+- `roles`
+- `branches`
+- `services`
+- `service_packages`
+- `vehicles`
+- `bookings`
+- `booking_status_history`
+- `repair_jobs`
+- `repair_job_status_history`
+- `technician_assignments`
+- `inspection_reports`
+- `inspection_items`
+- `inspection_media`
+- `estimates`
+- `estimate_items`
+- `estimate_approvals`
+- `parts`
+- `suppliers`
+- `inventory_movements`
+- `job_parts`
+- `labor_entries`
+- `invoices`
+- `invoice_items`
+- `payments`
+- `refunds`
+- `notifications`
+- `reviews`
+- `articles`
+- `contact_submissions`
+- `audit_logs`
+- `site_settings`
+
+Adapt the schema to the final application rather than creating unnecessary tables.
+
+Implement:
+- Database migrations.
+- Demo seed data.
+- Secure authorization.
+- Row-level security.
+- Server-side validation.
+- Transactional updates for important workflows.
+- Safe file-upload validation.
+- Database constraints.
+- Pagination and filtering.
+- Reliable booking conflict prevention.
+- Audit logs for sensitive actions.
+- Safe error handling.
+- Appropriate backup and recovery guidance.
+
+Never expose service-role keys, database passwords, payment secrets, or private API credentials in client-side code.
+
+Provide an `.env.example` file containing required variable names and explanations without real secrets.
+
+---
+
+# 6. SERVICE WORKFLOW AND BUSINESS RULES
+
+Implement a coherent end-to-end service workflow.
+
+The standard flow should be:
+
+1. Customer chooses a service.
+2. Customer enters vehicle details.
+3. Customer selects an available appointment.
+4. The system creates a booking request.
+5. The workshop confirms the booking according to its policy.
+6. Vehicle is checked in.
+7. A technician inspects the vehicle.
+8. Inspection findings are recorded.
+9. An estimate is created and sent to the customer.
+10. The customer approves or declines the proposed work.
+11. Authorized repair work begins.
+12. Additional work requires separate approval.
+13. Technician records the work performed and parts used.
+14. Repair undergoes the configured quality check.
+15. Final invoice is generated.
+16. Payment is recorded or verified.
+17. Vehicle is marked ready for collection.
+18. Customer receives handover information.
+19. The job is completed and retained in the service history.
+
+Support exceptional states such as:
+- Booking cancelled.
+- Customer did not arrive.
+- Waiting for parts.
+- Awaiting customer approval.
+- Repair delayed.
+- Additional inspection required.
+- Payment pending.
+- Refund requested.
+
+Use explicit status values and valid transitions.
+
+Do not permit unauthorized status changes or let a job skip required approval steps without an authorized override.
+
+Prevent duplicate bookings, double payments, and inconsistent inventory records.
+
+Do not allow stock quantities to become invalid through concurrent updates.
+
+---
+
+# 7. COMMUNICATION AND NOTIFICATIONS
+
+Configure notifications for:
+- Booking request received.
+- Booking confirmed.
+- Appointment reminder.
+- Appointment rescheduled.
+- Estimate available.
+- Estimate approved or declined.
+- Additional approval requested.
+- Repair status updated.
+- Parts delay, where applicable.
+- Vehicle ready for collection.
+- Invoice issued.
+- Payment confirmed.
+- Refund status changed.
+
+Use email as the baseline. Support SMS or WhatsApp integrations only when the provider is configured and the business has the required permissions and consent.
+
+Keep notification templates editable and branded.
+
+Never claim a notification was sent if the delivery provider has not confirmed it.
+
+Record notification status and handle failures gracefully.
+
+---
+
+# 8. SEO AND LOCAL SEARCH OPTIMIZATION
+
+Build technical SEO into every public page.
+
+Include:
+- Unique title tags.
+- Unique meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- XML sitemap.
+- Robots.txt.
+- Logical heading hierarchy.
+- Descriptive image alt text.
+- Clean URLs.
+- Internal links between services, pricing, FAQs, and booking pages.
+- Breadcrumb navigation where useful.
+- Fast-loading images.
+- Appropriate structured data.
+
+Use suitable `LocalBusiness` structured data and the most specific supported subtype appropriate for the actual business.
+
+Include only verified details:
+- Business name.
+- Address.
+- Telephone.
+- Opening hours.
+- Website URL.
+- Logo.
+- Service area, where applicable.
+
+Do not fabricate customer ratings, reviews, operating hours, addresses, or business claims.
+
+Provide guidance for Google Search Console and structured-data validation.
+
+Official reference:
+https://developers.google.com/search/docs/appearance/structured-data/local-business
+
+Do not promise a particular Google ranking.
+
+---
+
+# 9. SECURITY, PRIVACY, AND RELIABILITY
+
+Follow secure development practices throughout the application.
+
+Implement:
+- Server-side authorization.
+- Input validation.
+- Safe output rendering.
+- Protection against common web vulnerabilities.
+- Rate limiting on sensitive endpoints.
+- Secure sessions and cookies.
+- Password reset protections.
+- Payment webhook signature verification.
+- Secure file-upload rules.
+- Least-privilege permissions.
+- Audit logs.
+- Appropriate secret management.
+- Privacy-conscious error logging.
+- Data retention and deletion procedures.
+
+Protect customer contact information, vehicle registration details, invoices, repair history, and uploaded vehicle images.
+
+Apply the relevant Indian data-protection and consumer requirements and any other applicable regional laws. Confirm current legal requirements before production launch.
+
+Do not store unnecessary personal or vehicle information.
+
+---
+
+# 10. RESPONSIVE DESIGN AND ACCESSIBILITY
+
+Make every page work on:
+- Mobile phones.
+- Tablets.
+- Laptops.
+- Desktop monitors.
+- Large displays.
+
+Maintain a consistent layout system, spacing scale, typography, and component design.
+
+Ensure:
+- No accidental horizontal overflow.
+- No overlapping buttons or labels.
+- No broken navigation.
+- No clipped cards.
+- No cramped form fields.
+- Properly aligned pricing.
+- Readable text sizes.
+- Touch-friendly controls.
+- Visible keyboard focus.
+- Semantic HTML.
+- Accessible form labels.
+- Accessible error messages.
+- Keyboard-operable dialogs.
+- Reduced-motion support.
+- Sufficient color contrast.
+
+Aim for WCAG 2.2 AA accessibility practices.
+
+Test the mandatory single-line desktop navigation at multiple widths.
+
+---
+
+# 11. PERFORMANCE AND ENGINEERING QUALITY
+
+Optimize:
+- Core Web Vitals.
+- Image loading and compression.
+- Responsive image delivery.
+- Font loading.
+- JavaScript bundles.
+- Server rendering where appropriate.
+- Database queries.
+- Caching.
+- Loading and empty states.
+- Error handling.
+
+Avoid unnecessary dependencies, repeated components, oversized image assets, excessive animation, and expensive queries.
+
+Use a maintainable folder structure with clear separation between components, pages, server actions or APIs, database logic, validation schemas, and integrations.
+
+Do not place all application logic in one enormous component.
+
+---
+
+# 12. TESTING REQUIREMENTS
+
+Before declaring the project complete, perform a structured quality-assurance pass.
+
+## Visual tests
+- The design uses multiple balanced colors.
+- The page is not overwhelmingly black or visually harsh.
+- The logo is clear and consistent.
+- Automotive images actually load.
+- Every service has relevant imagery.
+- Typography and spacing are consistent.
+- The desktop header stays on one horizontal line.
+- Navigation labels never wrap into two lines.
+- No header overlap at supported desktop widths.
+- Mobile navigation opens and closes correctly.
+- No unintended horizontal scrolling.
+
+## Functional tests
+- Every navigation link opens the correct page.
+- Service cards open the correct detail pages.
+- Booking forms validate properly.
+- Availability is checked on the server.
+- Duplicate bookings are prevented.
+- Estimates can be created and approved.
+- Additional work requires authorization.
+- Repair status changes are recorded.
+- Customers can only access their own data.
+- Payment status is verified server-side.
+- Failed payments do not mark invoices paid.
+- Inventory changes remain consistent.
+- Admin and staff permissions are enforced.
+- Images and uploads work.
+- Contact forms provide correct success and error messages.
+- No important button is inert.
+
+## Technical tests
+- TypeScript checks pass.
+- Linting passes.
+- Production build succeeds.
+- Critical unit and integration tests pass.
+- Main customer journeys have end-to-end tests.
+- Database access policies are reviewed.
+- Payment webhooks are tested in the provider's test environment.
+- Accessibility checks are performed.
+- SEO metadata and structured data are validated.
+- Console errors and broken routes are addressed.
+
+Do not declare the project production-ready if critical tests have not been performed.
+
+---
+
+# 13. REQUIRED PROJECT DELIVERABLES
+
+Deliver:
+
+1. Complete multi-page website.
+2. Custom SVG logo and brand design system.
+3. Splash AI-generated or properly generated automotive image assets.
+4. All images integrated into the actual pages.
+5. Responsive shared header and footer.
+6. Fully working internal routing.
+7. Service catalogue and individual service pages.
+8. Booking system.
+9. Estimate and approval workflow.
+10. Vehicle inspection report system.
+11. Repair-status tracking.
+12. Customer authentication and dashboard.
+13. Staff and mechanic dashboard.
+14. Admin dashboard.
+15. Inventory management.
+16. Invoices and payment integration.
+17. Database schema and migrations.
+18. Demo seed data clearly marked as fictional.
+19. Environment configuration example.
+20. Form validation and error handling.
+21. SEO metadata and structured data.
+22. Test suite and testing instructions.
+23. README with installation and deployment instructions.
+24. Setup instructions for image generation, database, email, maps, and payment providers.
+25. A list of features that still require real credentials, verified business details, or external configuration.
+
+Do not invent working integrations or claim successful external operations without evidence.
+
+---
+
+# 14. FINAL IMPLEMENTATION INSTRUCTIONS
+
+Build the project in the following sequence:
+
+1. Establish the visual brand, color system, typography, and logo.
+2. Build the shared header and footer.
+3. Verify that desktop navigation remains on one line.
+4. Generate and integrate the required automotive images.
+5. Build all public pages and service detail routes.
+6. Implement the booking and estimate workflows.
+7. Implement authentication and customer dashboards.
+8. Build the repair tracking and digital inspection experience.
+9. Implement the mechanic and admin dashboards.
+10. Configure database, security, and permissions.
+11. Integrate payments and notifications.
+12. Add SEO, accessibility, and performance optimizations.
+13. Test all important routes, forms, and business workflows.
+14. Fix errors and verify the production build.
+15. Provide source code and deployment instructions.
+
+Do not replace real functionality with decorative buttons, mock payment success screens, fabricated availability, or fake live data.
+
+Use realistic sample data only for the demonstration and label it appropriately.
+
+**FINAL NON-NEGOTIABLE REQUIREMENTS:**
+
+- The website must have a beautiful, balanced, multi-color design with comfortable contrast.
+- It must not be predominantly black or visually harsh.
+- Splash AI-generated automotive images must be generated and integrated wherever the available tools permit; if the integration is unavailable, document that limitation and use an actual image-generation fallback.
+- Every important page must be connected through working navigation.
+- Desktop header navigation must remain in one single horizontal line.
+- Labels such as “About Us,” “Our Services,” and “Book a Service” must never split into multiple lines.
+- When the viewport is too narrow, switch to a responsive menu instead of wrapping the desktop navigation.
+- Frontend, backend, database, booking, repair tracking, estimates, and administration must be implemented as a coherent system.
+
+Build DRIVECRAFT AUTOCARE as a complete, premium, client-ready automotive service platform—not just a visual template.
